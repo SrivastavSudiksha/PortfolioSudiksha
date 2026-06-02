@@ -65,7 +65,7 @@ function makeWindow(
 
 export default function Desktop({ audience }: Props) {
   const [windows, setWindows] = useState<WindowState[]>([]);
-  const [maxZ, setMaxZ] = useState(100);
+  const [, setMaxZ] = useState(100);
 
   const priorityActions = AUDIENCE_ICONS[audience];
   const icons = ALL_ICONS.filter((ic) => priorityActions.includes(ic.action));

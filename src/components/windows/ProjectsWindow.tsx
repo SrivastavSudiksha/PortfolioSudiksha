@@ -52,21 +52,21 @@ export default function ProjectsWindow({ onOpenProject }: Props) {
                   className="text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-full"
                   style={{
                     background:
-                      project.status === 'completed'
+                      project.status === 'Completed'
                         ? 'rgba(16,185,129,0.1)'
                         : 'rgba(245,158,11,0.1)',
                     color:
-                      project.status === 'completed'
+                      project.status === 'Completed'
                         ? 'rgba(52,211,153,0.8)'
                         : 'rgba(251,191,36,0.8)',
                     border: `1px solid ${
-                      project.status === 'completed'
+                      project.status === 'Completed'
                         ? 'rgba(16,185,129,0.2)'
                         : 'rgba(245,158,11,0.2)'
                     }`,
                   }}
                 >
-                  {project.status === 'completed' ? 'Complete' : 'Active'}
+                  {project.status === 'Completed' ? 'Completed' : 'In Progress'}
                 </span>
               </div>
               <div>
